@@ -1,0 +1,88 @@
+:root{
+    --mainColor:#554edd ;
+    --btnColor: #e37373;
+    --btnColor2: #e3c373;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Edu AU VIC WA NT Hand", cursive; 
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dae3ee, #729ceb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+    background-color: #554edd77; /* or add it to the track */
+  }
+::-webkit-scrollbar-thumb {
+    background: var(--mainColor);
+  }
+.inputs,.products{
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #729ceb49;
+}
+.item {
+    margin-bottom: 10px;
+}
+.item label{
+    display: block;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+input,
+.item textarea{
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    outline: none;
+    transition:  0.5s box-shadow;
+}
+input::placeholder{
+    color: #ccc;
+    font-family: "Edu AU VIC WA NT Hand", cursive; 
+}
+input:focus,
+.item textarea:focus{
+    box-shadow: 0 0 0 .25rem  #554edd75 ;
+}
+.item textarea{
+   resize: none;
+}
+.btn{
+    display: block;
+    margin: 10px auto 0;
+    padding: 8px 20px;
+    border: 0;
+    font-weight: 500;
+    color: white;
+    background-color: var(--mainColor);
+    font-family: "Edu AU VIC WA NT Hand", cursive; 
+    cursor: pointer;
+}
+.products .table-responsive{
+    overflow-x: auto;
+}
+.products table{
+    width: 100%;
+    margin-top: 10px;
+    min-width: 800px;
+}
+.products table td{
+    padding: 10px;
+    text-align: center;
+}
+tbody .update{
+    background-color: #e3c373;
+}
+tbody .delete{
+    background-color: #e37373;
+}

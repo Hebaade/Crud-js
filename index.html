@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 9</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <section class="inputs">
+      <div class="item">
+        <label for="">Product Name:-</label>
+        <input type="text" id="pName" >
+      </div>
+
+      <div class="item">
+        <label for="">Product Price:-</label>
+        <input type="number" id="pPrice" >
+      </div>
+
+      <div class="item">
+        <label for="">Product Category:-</label>
+        <input type="text" id="pCategory" >
+      </div>
+
+      <div class="item">
+        <label for="">Product Desc:-</label>
+        <textarea  rows="5" id="pDesc"></textarea>
+      </div>
+
+      <button class="btn" id="btnAdd">Add Product</button>
+    </section>
+
+
+      <section class="products">
+        <input type="text" placeholder="Search..." id="searchInp" >
+        <div class="table-responsive">
+          <table>
+              <thead>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Desc</th>
+              </thead>
+              <tbody id="tbody">
+                <!-- <tr>
+                  <td>1</td>
+                  <td>Samsung</td>
+                  <td>5000</td>
+                  <td>Screen</td>
+                  <td>Excellent</td>
+                  <td><button class="btn update">Update</button></td>
+                  <td><button class="btn delete">Delete</button></td>
+  
+                </tr> -->
+              </tbody>
+          </table>
+        </div>
+      </section>
+    <script src="main.js"></script>
+  </body>
+</html>
